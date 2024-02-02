@@ -5,6 +5,7 @@ Stateless :
 Constructor -> build() {render it on the screen}
 */
 
+import 'package:brosplit/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
             seedColor: const Color.fromARGB(255, 38, 121, 189)),
         useMaterial3: true,
       ),
-      home: AuthPage(),
+      home: HomePage(),
     );
   }
 }
@@ -39,7 +40,7 @@ class AuthPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Brosplit'),
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.green,
       ),
       body: const Column(children: [
         Padding(
